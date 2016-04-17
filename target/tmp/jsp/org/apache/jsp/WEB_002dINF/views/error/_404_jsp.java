@@ -1,10 +1,10 @@
-package org.apache.jsp;
+package org.apache.jsp.WEB_002dINF.views.error;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class _404_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -30,7 +30,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     PageContext _jspx_page_context = null;
 
     try {
-      response.setContentType("text/html");
+      response.setContentType("text/html; charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
       			null, true, 8192, true);
       _jspx_page_context = pageContext;
@@ -41,11 +41,18 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("<html>\n");
-      out.write("<body>\n");
-      out.write("<h2>Hello World!</h2>\n");
-      out.write("</body>\n");
-      out.write("</html>\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("<html>\r\n");
+      out.write("<head>\r\n");
+      out.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("<title>404</title>\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("<H2>404</H2>\r\n");
+      out.write("<h3> Page NOT Found!</h3>\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
